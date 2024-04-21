@@ -9,12 +9,8 @@ def calculate(first_number,operator,second_number):
 		res = a/b
 	elif operator == "+":
 		res = a + b
-	elif operator == "%":
-		res = a % b
 	elif operator == "-":
 		res = a - b
-	elif operator == "**":
-		res = a**b
 	else:
 		print("Not a valid operator")
 	return res
