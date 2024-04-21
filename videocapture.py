@@ -89,9 +89,10 @@ while(cap.isOpened()):
                     cv2.putText(clone, "The answer is ", (50, 350), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 3)
                     cv2.putText(clone, in_line, (50, 400), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 3)
                 elif num > 1800:
+                    print("destroy window")
                     cap.release()
                     cv2.destroyAllWindows()
-
+                print(len(contours))
                 for cnt in contours:
                     if cv2.contourArea(cnt) > 2500:
                         # print("Hand detecting for prediction")
